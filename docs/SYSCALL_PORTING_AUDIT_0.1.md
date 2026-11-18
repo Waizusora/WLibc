@@ -34,7 +34,9 @@ The current [Wicofe Userspace ABI Specification Baseline](https://github.com/Wai
 - process/thread, memory, descriptor, time, signal, synchronization, and socket domains are planned, not fully specified;
 - initial architecture targets are x86-64 and AArch64.
 
-See the [candidate syscall calling convention proposal](https://github.com/Waizusora/Wicofe-ABI/blob/main/docs/SYSCALL_CALLING_CONVENTION_PROPOSAL_0.1.md). It is a design candidate only. Therefore, a real syscall backend cannot safely be implemented yet. Hardcoding Linux conventions or inventing Wicofe numbers in Wlibc would create a competing ABI and is prohibited.
+See the [candidate syscall calling convention proposal](https://github.com/Waizusora/Wicofe-ABI/blob/main/docs/SYSCALL_CALLING_CONVENTION_PROPOSAL_0.1.md) and its [technical review](https://github.com/Waizusora/Wicofe-ABI/blob/main/docs/SYSCALL_CONVENTION_TECHNICAL_REVIEW_0.1.md). The review finds carry-flag error signaling architecturally feasible on both targets, but requires explicit kernel return-path, signal-context, and compiler-stub validation. It does not accept or freeze the proposal.
+
+Therefore, a production syscall backend cannot safely be implemented yet. Hardcoding Linux conventions or inventing Wicofe numbers in Wlibc would create a competing ABI and is prohibited.
 
 ## 4. Required ABI decisions, in dependency order
 
@@ -79,6 +81,7 @@ No fake syscall IDs or placeholder Linux syscall fallbacks are permitted.
 
 - Upstream baseline: pinned.
 - Linux-specific entry-point audit: initial findings recorded.
+- Syscall convention: technical review recorded; ABI adoption pending.
 - Native syscall code: not implemented; blocked by Wicofe-ABI.
 - x86-64/AArch64 build: not started.
 - POSIX.1-2024 conformance: not verified.
