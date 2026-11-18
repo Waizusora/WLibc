@@ -32,4 +32,4 @@ See [docs/INDEX.md](docs/INDEX.md) for the Wlibc technical documentation.
 
 ## Licensing
 
-Imported musl source retains its upstream license and notices. All imported files, optional components, patches, and generated material require provenance and license review before integration. Original Wicofe code follows the applicable project license policy.
+Original Wlibc code is licensed under MIT; see [LICENSE](LICENSE) and [licensing and provenance policy](docs/LICENSING_AND_PROVENANCE.md). Imported musl source and all other third-party material retain their upstream licenses, copyright notices, and file-level terms. The exact musl revision and component-level provenance audit are required before source import.
