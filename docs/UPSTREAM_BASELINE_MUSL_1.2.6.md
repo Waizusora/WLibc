@@ -18,10 +18,11 @@ Wlibc selects the following upstream snapshot as its initial implementation base
 | GitHub source mirror used for file inspection | https://github.com/ifduyue/musl |
 | Mirror refresh observed | 2026-11-17 |
 | Committer date | 2026-10-14 22:48:56 UTC |
+| Commit signature | Unsigned; GitHub reports the commit as unverified |
 
 The commit is `7813e9119eb5fe681b6750b8a033a0490bca0941` (message: `regex: avoid int overflow in regcomp`). The mirror showed this as the current master tip when checked on 2026-11-17. The source tree reports `VERSION=1.2.6`.
 
-This is a pinned upstream snapshot, not a claim that the tag `v1.2.6` itself is the selected commit. Re-check the official upstream ref before importing. No source archive checksum is recorded because the archive has not been downloaded.
+This is a pinned upstream snapshot, not a claim that the tag `v1.2.6` itself is the selected commit. The mirror was refreshed on 2026-11-17 and still showed this commit as master; the commit object is unsigned, so the pin is based on the commit/tree hashes and independent mirror observation rather than a verified signature. Re-check the official upstream ref before importing. No source archive checksum is recorded because the archive has not been downloaded.
 
 ## 2. Source layout audit
 
