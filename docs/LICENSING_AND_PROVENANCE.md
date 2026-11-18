@@ -4,9 +4,12 @@
 
 ## 1. License for original Wlibc work
 
-Original Wlibc source code and documentation are licensed under MIT, as stated
-in the repository LICENSE. This is an explicit repository-level exception to
-the Wicofe project default license.
+Original Wlibc source code and documentation for which the project has the
+necessary licensing rights are licensed under MIT, as stated in the repository
+LICENSE. This is an explicit repository-level exception to the Wicofe project
+default license. Existing contributor-owned or third-party material must not
+be relicensed without the necessary rights and remains subject to its applicable
+license.
 
 The MIT choice permits modification, redistribution, static or dynamic
 linking, and commercial use, subject to preserving the applicable copyright
