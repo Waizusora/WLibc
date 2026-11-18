@@ -19,7 +19,7 @@ GNU and BSD compatibility extensions are not project targets. Additional POSIX i
 The canonical syscall ABI is defined by [Wicofe-ABI](https://github.com/Waizusora/Wicofe-ABI) and implemented by [Wicofe-Kernel](https://github.com/Waizusora/Wicofe-Kernel). Shared Rust APIs belong to [Wicofe-Lib](https://github.com/Waizusora/Wicofe-Lib). [Wicofe-SDK](https://github.com/Waizusora/Wicofe-SDK) packages the target sysroot and toolchain.
 
 ## Porting and license policy
-A Linux-targeted libc is not plug-and-play. Record exact upstream version, license, patches, runtime assumptions, and test evidence. Imported source retains its upstream license and notices.
+A Linux-targeted libc is not plug-and-play. Record exact upstream version, license, patches, runtime assumptions, and test evidence. Imported source retains its upstream license and notices. Original Wlibc-authored material is MIT-licensed; see [licensing and provenance policy](LICENSING_AND_PROVENANCE.md).
 
 - [Central documentation index](https://github.com/Waizusora/Wicofe-Docs/blob/main/INDEX.md)
 - [Repository documentation map](https://github.com/Waizusora/Wicofe-Docs/blob/main/REPOSITORY_DOCUMENTATION_MAP.md)
