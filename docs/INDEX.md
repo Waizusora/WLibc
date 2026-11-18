@@ -3,8 +3,15 @@
 This directory documents Wlibc (Wicofe C Library), the C standard library and POSIX runtime for Wicofe.
 
 ## Architecture and design
-- [C library and runtime porting architecture 0.1](LIBC_PORTING_ARCHITECTURE_0.1.md) — musl-fork direction, native syscall adaptation, process startup, memory, threads/TLS, linking and POSIX conformance.
+- [C library and runtime porting architecture 0.1](LIBC_PORTING_ARCHITECTURE_0.1.md) — native syscall adaptation, process startup, memory, threads/TLS, linking and POSIX conformance.
+- [musl upstream baseline 1.2.6](UPSTREAM_BASELINE_MUSL_1.2.6.md) — pinned source revision, tree audit and license findings.
+- [Native syscall port audit 0.1](SYSCALL_PORTING_AUDIT_0.1.md) — Linux-specific assumptions and Wicofe ABI blockers.
+- [POSIX conformance profile 0.1](POSIX_CONFORMANCE_PROFILE_0.1.md) — ISO C17 and POSIX.1-2024 scope.
 - [Unix userspace foundation 0.1](https://github.com/Waizusora/Wicofe-Specs/blob/main/userspace/UNIX_USERSPACE_FOUNDATION_0.1.md) — normative cross-component WFH, POSIX and timezone requirements.
+
+## Upstream baseline
+
+The initial musl snapshot is pinned in [`upstream/musl.lock`](../upstream/musl.lock). The source has not yet been imported; see the upstream import gate and current port blockers before treating Wlibc as a buildable libc.
 
 ## Scope
 - ISO C and POSIX interfaces for the declared conformance profile.
