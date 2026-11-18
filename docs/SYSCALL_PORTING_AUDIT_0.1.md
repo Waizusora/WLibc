@@ -39,7 +39,7 @@ The initial errno constants and register-preservation contract are now specified
 ## 4. Remaining ABI prerequisites, in dependency order
 
 1. Canonical errno values and public header generation.
-2. Exact GPR preservation and condition-code clobber contract.
+2. Signal-frame representation and restoration of user condition state.
 3. Process entry stack, argc/argv/envp/auxiliary data, exit and exec semantics.
 4. Memory map/unmap/protect semantics, page size discovery and mapping flags.
 5. File descriptor, open/read/write/close, metadata, pipe and poll semantics.
