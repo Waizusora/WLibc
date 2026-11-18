@@ -14,6 +14,7 @@ verified_mirror = "https://repo.or.cz/musl.mirror.git"
 github_mirror = "https://github.com/ifduyue/musl"
 mirror_last_refreshed = "2026-11-17"
 commit_committer_date = "2026-10-14T22:48:56Z"
+commit_signature = "unsigned; GitHub verification reports unverified"
 source_archive_sha256 = ""
 source_imported = false
 status = "pinned-for-audit; not-yet-imported"
