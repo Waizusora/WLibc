@@ -39,3 +39,7 @@ See [docs/INDEX.md](docs/INDEX.md) for the Wlibc technical documentation.
 ## Licensing
 
 Original Wlibc-authored work is licensed under MIT where Wlibc has the necessary licensing rights; see [LICENSE](LICENSE), [COPYRIGHT](COPYRIGHT), and [licensing and provenance policy](docs/LICENSING_AND_PROVENANCE.md). Imported musl source and all other third-party material retain their upstream licenses, copyright notices, and file-level terms. The exact source revision and component-level audit are recorded separately.
+
+## Wicofe-wide principles
+
+Wicofe is a Unix-like, POSIX-compatible, non-GNU alternative. Native components must use Wicofe interfaces and must not require Linux libc or GNU compatibility layers. Prefer permissive licenses; avoid GPL/AGPL, and consider LGPL only when no suitable permissive alternative exists. Reuse or fork upstream software when implementing it from scratch would be disproportionately difficult. See the [canonical project principles](https://github.com/Waizusora/Wicofe-Docs/blob/main/PROJECT_PRINCIPLES.md).
