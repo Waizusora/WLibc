@@ -26,7 +26,7 @@ Wlibc must consume canonical Wicofe-ABI definitions. It must not assign syscall 
 
 ## 3. Upstream implementation and provenance
 
-The selected implementation direction is a musl fork. Before importing source, record:
+The selected implementation direction is a musl fork. musl's project-level license is MIT. Original Wlibc-authored material is also licensed under MIT as an explicit repository-specific exception to the Wicofe project default. Before importing source, record:
 - exact upstream version and source revision;
 - core and per-file license obligations;
 - bundled code, headers, startup files, generated files and optional component provenance;
