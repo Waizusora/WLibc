@@ -1,32 +1,35 @@
-# Wicofe-Libc
+# Wlibc
 
-C standard library and runtime integration for Wicofe.
+Wlibc (Wicofe C Library) is the C standard library and POSIX runtime project for Wicofe.
 
-## Scope
+## Direction
 
-- Adapt a suitable libc implementation to the Wicofe syscall and process ABI.
-- Define startup objects, process entry, environment handling, and system-call glue.
-- Provide headers and documented C interfaces required by native applications.
-- Establish compatibility tests for supported libc behavior.
+- Fork musl as the initial implementation base, subject to exact-version, license, and provenance review.
+- Port the runtime to the native Wicofe syscall ABI; Linux syscall behavior is not the target ABI.
+- Target the declared ISO C and POSIX.1 conformance profile.
+- Do not target GNU or BSD compatibility extensions.
+- Implement additional POSIX interfaces in a separate Wicofe POSIX layer when that separation is architecturally useful.
+- Provide the C runtime, process startup, errno mapping, threading/TLS integration, time APIs, and conformance tests.
+- Integrate IANA TZ Database data through a TZif runtime in userspace.
+- Support static and dynamic linking as separate milestones, with dynamic linking gated on a defined Wicofe executable and loader ABI.
 
-## Important constraints
+## Ownership boundaries
 
-A libc designed for Linux or another Unix-like kernel is not plug-and-play. Its syscall layer, threading model, signal behavior, process interfaces, filesystem assumptions, and runtime startup must be ported or adapted to Wicofe.
-
-The project must evaluate upstream license obligations and all patches before selecting or importing an implementation. Do not assume that every libc or optional component is compatible with the Wicofe license policy.
-
-## Dependencies
-
-The syscall contract is owned by Wicofe-ABI and implemented by Wicofe-Kernel. Shared non-libc userspace APIs belong in Wicofe-Lib.
+- [Wicofe-ABI](https://github.com/Waizusora/Wicofe-ABI) owns syscall identifiers, calling conventions, public data layouts, raw errors, and ABI versioning.
+- [Wicofe-Kernel](https://github.com/Waizusora/Wicofe-Kernel) implements kernel-side ABI behavior.
+- Wlibc owns ISO C/POSIX C interfaces and their userspace runtime implementation.
+- [Wicofe-Lib](https://github.com/Waizusora/Wicofe-Lib) owns shared Rust userspace libraries and safe ABI wrappers; it is not a replacement for Wlibc.
+- [Wicofe-SDK](https://github.com/Waizusora/Wicofe-SDK) owns target sysroot and toolchain packaging.
+- [Wicofe-Specs Unix userspace foundation](https://github.com/Waizusora/Wicofe-Specs/blob/main/userspace/UNIX_USERSPACE_FOUNDATION_0.1.md) coordinates the cross-repository requirements.
 
 ## Status
 
-Initial repository baseline; no complete Wicofe libc port is claimed.
-
-## License
-
-The repository's original code targets MPL-2.0. Imported libc sources retain their upstream licenses and notices.
+Architecture and porting plan only. No complete musl fork, native syscall backend, complete POSIX implementation, or verified Wicofe runtime is claimed.
 
 ## Documentation
 
-See [docs/INDEX.md](docs/INDEX.md) for this repository's technical documentation. The [central repository documentation map](https://github.com/Waizusora/Wicofe-Docs/blob/main/REPOSITORY_DOCUMENTATION_MAP.md) identifies canonical ownership and cross-repository boundaries.
+See [docs/INDEX.md](docs/INDEX.md) for the Wlibc technical documentation.
+
+## Licensing
+
+Imported musl source retains its upstream license and notices. All imported files, optional components, patches, and generated material require provenance and license review before integration. Original Wicofe code follows the applicable project license policy.
