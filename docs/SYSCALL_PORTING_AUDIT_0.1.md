@@ -34,7 +34,7 @@ The current [Wicofe Userspace ABI Specification Baseline](https://github.com/Wai
 - process/thread, memory, descriptor, time, signal, synchronization, and socket domains are planned, not fully specified;
 - initial architecture targets are x86-64 and AArch64.
 
-Therefore, a real syscall backend cannot safely be implemented yet. Hardcoding Linux conventions or inventing Wicofe numbers in Wlibc would create a competing ABI and is prohibited.
+See the [candidate syscall calling convention proposal](https://github.com/Waizusora/Wicofe-ABI/blob/main/docs/SYSCALL_CALLING_CONVENTION_PROPOSAL_0.1.md). It is a design candidate only. Therefore, a real syscall backend cannot safely be implemented yet. Hardcoding Linux conventions or inventing Wicofe numbers in Wlibc would create a competing ABI and is prohibited.
 
 ## 4. Required ABI decisions, in dependency order
 
