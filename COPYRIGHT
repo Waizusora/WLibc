@@ -2,9 +2,10 @@
 
 ## Original Wlibc work
 
-Copyright (c) 2026 Waizusora. Original Wlibc source and documentation are
-licensed under the MIT License in LICENSE, except where a file states
-otherwise.
+Copyright (c) 2026 Waizusora. Original Wlibc source and documentation for
+which the project has the necessary licensing rights are licensed under the
+MIT License in LICENSE, except where a file states otherwise. Do not relicense
+contributor-owned or third-party material without the necessary rights.
 
 ## Imported musl material
 
