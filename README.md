@@ -29,7 +29,7 @@ Wlibc (Wicofe C Library) is the C standard library and POSIX runtime project for
 - Upstream root copyright notice preserved.
 - First-pass syscall and license audits documented.
 - musl source tree not yet imported.
-- Wicofe syscall backend not implemented because the canonical syscall ABI remains draft and has no frozen syscall numbers, register assignments, or raw error convention.
+- Wicofe raw syscall backend not implemented; carry-flag result encoding, initial errno values, and register-preservation rules are adopted, but syscall IDs and kernel entry/return implementation remain pending.
 - No complete POSIX implementation or verified Wicofe runtime is claimed.
 
 ## Documentation
