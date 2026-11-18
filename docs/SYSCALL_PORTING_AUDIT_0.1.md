@@ -34,7 +34,7 @@ Wicofe-ABI has adopted the following convention for x86-64 and AArch64:
 - Wlibc must capture the carry result inside the same compiler-visible assembly operation as the trap instruction, with explicit register and memory clobbers.
 - On failure, Wlibc converts the positive raw errno into the POSIX interface's failure return and thread-local `errno`.
 
-The canonical errno constants, syscall IDs, detailed register preservation contract, signal context and per-call interruption semantics remain to be specified in Wicofe-ABI. See its [calling convention](https://github.com/Waizusora/Wicofe-ABI/blob/main/docs/SYSCALL_CALLING_CONVENTION_PROPOSAL_0.1.md) and [technical review](https://github.com/Waizusora/Wicofe-ABI/blob/main/docs/SYSCALL_CONVENTION_TECHNICAL_REVIEW_0.1.md).
+The initial errno constants and register-preservation contract are now specified in Wicofe-ABI. Syscall IDs, signal context and per-call interruption semantics remain open. See its [calling convention](https://github.com/Waizusora/Wicofe-ABI/blob/main/docs/SYSCALL_CALLING_CONVENTION_PROPOSAL_0.1.md) and [technical review](https://github.com/Waizusora/Wicofe-ABI/blob/main/docs/SYSCALL_CONVENTION_TECHNICAL_REVIEW_0.1.md).
 
 ## 4. Remaining ABI prerequisites, in dependency order
 
