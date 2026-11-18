@@ -1,6 +1,6 @@
 # Wlibc Porting Architecture 0.1
 
-**Status:** Proposed architecture. No complete musl fork, native syscall backend, or POSIX-conformant Wicofe runtime is claimed.
+**Status:** Porting architecture with musl 1.2.6 baseline pinned for audit. Source import, native syscall backend, and POSIX conformance remain incomplete.
 
 ## 1. Purpose
 
@@ -55,7 +55,7 @@ No Linux syscall backend or Linux process ABI may remain as an implicit runtime 
 
 ## 5. POSIX conformance policy
 
-- Select and document the ISO C edition and POSIX.1 edition before declaring a conformance claim.
+- Target ISO C17 and IEEE Std 1003.1-2024 (POSIX.1-2024 / Issue 8); see [POSIX conformance profile](POSIX_CONFORMANCE_PROFILE_0.1.md).
 - Target full conformance to the declared POSIX profile, including required options and explicitly selected optional facilities.
 - GNU and BSD compatibility extensions are excluded from project requirements.
 - Additional POSIX interfaces may be supplied by a separate POSIX layer. They must share Wlibc's headers, types, ABI rules, error behavior and conformance suite.
@@ -66,7 +66,7 @@ No Linux syscall backend or Linux process ABI may remain as an implicit runtime 
 
 The raw kernel interface is owned by Wicofe-ABI. Each Wlibc wrapper maps documented raw results into the C/POSIX contract, including errno, interruption, partial completion, blocking and cancellation behavior where required.
 
-The ABI baseline must select the raw syscall error convention before wrappers hardcode an encoding or errno mapping. Generate or validate wrapper constants against canonical ABI definitions where practical.
+The ABI baseline still has not selected the raw syscall error convention. This is a hard blocker; see [native syscall port audit](SYSCALL_PORTING_AUDIT_0.1.md). Generate or validate wrapper constants against canonical ABI definitions where practical.
 
 All user pointers and lengths must follow the ABI's validation rules. Wlibc must not pass compiler-private Rust layouts or undocumented structures into the kernel.
 
