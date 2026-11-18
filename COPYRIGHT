@@ -1,0 +1,30 @@
+# Copyright and third-party notices
+
+## Original Wlibc work
+
+Copyright (c) 2026 Waizusora. Original Wlibc source and documentation are
+licensed under the MIT License in LICENSE, except where a file states
+otherwise.
+
+## Imported musl material
+
+Wlibc is planned to use musl as its initial implementation base. Any musl
+source imported in the future must retain the upstream copyright and license
+notices. The musl project states that musl as a whole is MIT-licensed, while
+some files and bundled components carry their own notices or license terms.
+
+Before importing a pinned musl revision, Wlibc must:
+- record the exact upstream commit and source archive hash;
+- preserve the upstream COPYRIGHT file in the source distribution;
+- preserve file-level notices and all applicable third-party license texts;
+- inventory optional components and exclude any component not approved for Wicofe;
+- record local modifications and their rationale; and
+- produce a machine-readable and human-readable third-party inventory.
+
+No musl source import or completed provenance audit is claimed by this
+architecture-only repository state.
+
+## Third-party material
+
+Third-party files retain their own licenses. The repository-level MIT license
+does not relicense third-party components or override file-level notices.
