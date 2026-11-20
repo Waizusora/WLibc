@@ -21,7 +21,7 @@ Wlibc (Wicofe C Library) is the C standard library and POSIX runtime project for
 - Wlibc owns ISO C/POSIX C interfaces and their userspace runtime implementation.
 - [Wicofe-Lib](https://github.com/Waizusora/Wicofe-Lib) owns shared Rust userspace libraries and safe ABI wrappers; it is not a replacement for Wlibc.
 - [Wicofe-SDK](https://github.com/Waizusora/Wicofe-SDK) owns target sysroot and toolchain packaging.
-- [Wicofe-Specs Unix userspace foundation](https://github.com/Waizusora/Wicofe-Specs/blob/main/userspace/UNIX_USERSPACE_FOUNDATION_0.1.md) coordinates cross-repository requirements.
+- [Wicofe-Spec Unix userspace foundation](https://github.com/Waizusora/Wicofe-Spec/blob/main/userspace/UNIX_USERSPACE_FOUNDATION_0.1.md) coordinates cross-repository requirements.
 
 ## Current status
 
@@ -42,4 +42,4 @@ Original Wlibc-authored work is licensed under MIT where Wlibc has the necessary
 
 ## Wicofe-wide principles
 
-Wicofe is an independent Unix-like, POSIX-compatible operating system and software ecosystem, designed as an alternative to established and widely adopted software ecosystems and technologies, including GNU. Native components must use Wicofe interfaces and must not require Linux libc or GNU compatibility layers. Prefer permissive licenses; avoid GPL/AGPL, and consider LGPL only when no suitable permissive alternative exists. Reuse or fork upstream software when implementing it from scratch would be disproportionately difficult. See the [canonical project principles](https://github.com/Waizusora/Wicofe-Docs/blob/main/PROJECT_PRINCIPLES.md).
+Wicofe is an independent Unix-like, POSIX-compatible operating system and software ecosystem, designed as an alternative to established and widely adopted software ecosystems and technologies, including GNU. Native components must use Wicofe interfaces and must not require Linux libc or GNU compatibility layers. Prefer permissive licenses; avoid GPL/AGPL, and consider LGPL only when no suitable permissive alternative exists. Reuse or fork upstream software when implementing it from scratch would be disproportionately difficult. See the [canonical project principles](https://github.com/Waizusora/Wicofe-Doc/blob/main/PROJECT_PRINCIPLES.md).
