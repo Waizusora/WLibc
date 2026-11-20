@@ -8,7 +8,7 @@ Wlibc (Wicofe C Library) is the official C standard library and POSIX runtime fo
 
 Wlibc targets the declared ISO C and POSIX.1 profile. GNU and BSD compatibility extensions are not project goals. Additional POSIX interfaces may be implemented in a separate Wicofe POSIX layer when separation is architecturally useful.
 
-The cross-component requirements are defined by [Wicofe Unix userspace foundation 0.1](https://github.com/Waizusora/Wicofe-Specs/blob/main/userspace/UNIX_USERSPACE_FOUNDATION_0.1.md).
+The cross-component requirements are defined by [Wicofe Unix userspace foundation 0.1](https://github.com/Waizusora/Wicofe-Spec/blob/main/userspace/UNIX_USERSPACE_FOUNDATION_0.1.md).
 
 ## 2. Ownership boundaries
 
