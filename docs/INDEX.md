@@ -8,7 +8,7 @@ This directory documents Wlibc (Wicofe C Library), the C standard library and PO
 - [Native syscall port audit 0.1](SYSCALL_PORTING_AUDIT_0.1.md) — Linux-specific assumptions and Wicofe ABI blockers.
 - [Wicofe syscall calling convention proposal 0.1](https://github.com/Waizusora/Wicofe-ABI/blob/main/docs/SYSCALL_CALLING_CONVENTION_PROPOSAL_0.1.md) — candidate syscall entry/result contract; not yet accepted.
 - [POSIX conformance profile 0.1](POSIX_CONFORMANCE_PROFILE_0.1.md) — ISO C17 and POSIX.1-2024 scope.
-- [Unix userspace foundation 0.1](https://github.com/Waizusora/Wicofe-Specs/blob/main/userspace/UNIX_USERSPACE_FOUNDATION_0.1.md) — normative cross-component WFH, POSIX and timezone requirements.
+- [Unix userspace foundation 0.1](https://github.com/Waizusora/Wicofe-Spec/blob/main/userspace/UNIX_USERSPACE_FOUNDATION_0.1.md) — normative cross-component WFH, POSIX and timezone requirements.
 
 ## Upstream baseline
 
@@ -29,5 +29,5 @@ The canonical syscall ABI is defined by [Wicofe-ABI](https://github.com/Waizusor
 ## Porting and license policy
 A Linux-targeted libc is not plug-and-play. Record exact upstream version, license, patches, runtime assumptions, and test evidence. Imported source retains its upstream license and notices. Original Wlibc-authored material is MIT-licensed; see [licensing and provenance policy](LICENSING_AND_PROVENANCE.md).
 
-- [Central documentation index](https://github.com/Waizusora/Wicofe-Docs/blob/main/INDEX.md)
-- [Repository documentation map](https://github.com/Waizusora/Wicofe-Docs/blob/main/REPOSITORY_DOCUMENTATION_MAP.md)
+- [Central documentation index](https://github.com/Waizusora/Wicofe-Doc/blob/main/INDEX.md)
+- [Repository documentation map](https://github.com/Waizusora/Wicofe-Doc/blob/main/REPOSITORY_DOCUMENTATION_MAP.md)
